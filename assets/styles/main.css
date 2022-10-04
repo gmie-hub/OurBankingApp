@@ -72,15 +72,15 @@
   
   /* Registration */
   .sec-reg{
-      background-image: url(../img/login-banner.1c3be380.png);
+      /* background-image: url(../img/login-banner.1c3be380.png); */
       max-width: 100%;
-      background-position: 50% 50%;
+      /* background-position: 50% 50%; */
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
       padding-top: 10px;
       padding-bottom: 10px;
-      
+      background-color: #ab2656;
   }
   .row{
     height: 100vh !important;
