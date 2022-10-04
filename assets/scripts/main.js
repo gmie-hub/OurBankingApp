@@ -1,6 +1,14 @@
 const register_form = document.querySelector("#registerForm");
 
 let allUsers = [];
+const allData = JSON.parse(localStorage.getItem('reg_info'))
+if(allData === null){
+    localStorage.setItem('reg_info', JSON.stringify([]))
+}
+const currentData = JSON.parse(localStorage.getItem('current_session'))
+if(currentData === null){
+    localStorage.setItem('current_session', JSON.stringify([]))
+}
 const submitBtn = document.getElementById("reg");
 submitBtn?.addEventListener("click", () => {
   const reg_info = {
