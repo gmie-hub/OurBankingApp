@@ -86,10 +86,10 @@
     height: 100vh !important;
   }
   .col-6-bg{
-    background: url(../img/centerimg.png);
+    background-color: #cdc1c5;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    /* width: auto; */
   }
   .card-bg{
     background-color: #ab2656;
@@ -142,4 +142,22 @@ img{
 .bg-red{
   background-color: red !important;
   color: white !important;
+}
+/* .m-width{
+  max-width: 100%;
+} */
+html, body {
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  position: relative
+}
+@media(max-width: 768px){
+  .card-bg{
+    width: 100%;
+  }
+}
+.canvas-bg{
+  background-color: #cdc1c5;
 }

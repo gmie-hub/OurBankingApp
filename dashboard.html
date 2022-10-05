@@ -12,43 +12,41 @@
         crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-2-lg form-btn">
-                <div class="l-height">
+    <div class="container">
+        <div class="row m-width">
+            <div class="col-2-lg col-12-md col-12-sm form-btn">
+                <!-- <div class="l-height">
                     <img class="pic" src="./assets/img/avatar.jpg"/>
                     <h5 class="fs-3 fw-medium text my-6">Welcome, <span id="username"></span></h5>
                     <h5 class="fs-3 fw-medium text my-6">Email: <span id="email"></span></h5>
                     <h5 class="fs-3 fw-medium text my-6">DOB: <span id="age"></span></h5>
                     <h5 class="fs-3 fw-medium text my-6">Phone: <span id="phone"></span></h5>
                     <h5 class="fs-3 fw-medium text my-6">Gender: <span id="gender"></span></h5>
-
-                    <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header">
-                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div> -->
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    Profile
+                  </button>
+                <div class="offcanvas offcanvas-start canvas-bg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Welcome, <span id="username"></span></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-header">
+                        <div class="purple">
+                            <img class="pic" src="./assets/img/avatar.jpg"/></li>
+                            <!-- <h5 class="">Welcome, <span id="username"></span></h5> -->
+                            <h5 class="my-6">Email: <span id="email"></span></h5>
+                            <h5 class="my-6">DOB: <span id="age"></span></h5>
+                            <h5 class="my-6">Phone: <span id="phone"></span></h5>
+                            <h5 class="my-6">Gender: <span id="gender"></span></h5>
                         </div>
-                        <div class="offcanvas-body">
-                          <div>
-                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                          </div>
-                          <div class="dropdown mt-3">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                              Dropdown button
-                            </button>
-                            <ul class=">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div> -->
+                    </div>
                 </div>
             </div>
-            <div class="col-8-lg col-6-bg d-flex flex-column justify-content-center ">
+            <div class="col-8-lg col-12-md col-12-sm col-6-bg d-flex flex-column justify-content-center ">
                 <div class="card card-bg text-white text-center mx-auto mt-5">
                     <div class="card-body card-adjust my-2">
                         <h3 class="card-title">TIER 1 SAVINGS ACCOUNT</h3>
@@ -82,7 +80,7 @@
                     </table>
                   </div>
             </div>
-            <div class="col-2-lg form-btn d-flex flex-column justify-content-center">
+            <div class="col-2-lg col-12-md col-12-sm form-btn d-flex flex-column justify-content-center">
                 
                 <button class="btn border rounded-pill form-btn w-50 no-border text-white" type="button" data-bs-toggle="modal" data-bs-target="#myModal">
                     Deposit
@@ -99,7 +97,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cancel</button>
-                                <button type="button" class="btn btn-primary" id="addMoney">Deposit</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="addMoney">Deposit</button>
                             </div>
                         </div>
                     </div>

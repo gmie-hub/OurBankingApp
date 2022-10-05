@@ -81,10 +81,9 @@ decrement.addEventListener('click', () => {
 })
 
 const userData = JSON.parse(localStorage.getItem('current_session'));
-allUsers = [...userData];
-document.getElementById('username').innerHTML = allUsers[0].name;
-document.getElementById('email').innerHTML = allUsers[0].email;
-document.getElementById('phone').innerHTML = allUsers[0].phone;
-document.getElementById('age').innerHTML = allUsers[0].DOB;
-document.getElementById('gender').innerHTML = allUsers[0].gender
+document.getElementById('username').innerHTML = userData[0].name;
+document.getElementById('email').innerHTML = userData[0].email;
+document.getElementById('phone').innerHTML = userData[0].phone;
+document.getElementById('age').innerHTML = userData[0].DOB;
+document.getElementById('gender').innerHTML = userData[0].gender
 
