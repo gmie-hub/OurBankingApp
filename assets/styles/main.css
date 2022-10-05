@@ -143,9 +143,6 @@ img{
   background-color: red !important;
   color: white !important;
 }
-/* .m-width{
-  max-width: 100%;
-} */
 html, body {
   overflow-x: hidden;
   font-family: 'Nunito', sans-serif;
@@ -157,7 +154,21 @@ body {
   .card-bg{
     width: 100%;
   }
+  .profile .form-btn{
+    background-color: #cdc1c5;
+  }
+  .btn-mt{
+    padding-top: 58px;
+  }
+  .mt-5{
+    margin-top: 0 !important;
+  }
 }
 .canvas-bg{
   background-color: #cdc1c5;
+}
+.btn-bg{
+  background-color: #ab2656;
+  color: white;
+  border-color: #ab2656;
 }
